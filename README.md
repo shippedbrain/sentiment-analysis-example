@@ -1,4 +1,31 @@
-# AngularSentimentAnalysis
+# Sentiment Analysis
+
+This project exemplifies how to consume the Shipped Brain API by making a prediction to the [Sentiment Analysis](https://app.shippedbrain.com/models/sentiment-analysis/1) model.
+
+The app was built using Angular 9.
+
+## Authenticate requests
+
+In `/src/app/interceptors/auth.interceptor.ts` replace `<your_token>` with your Shipped Brain token. 
+
+In a real world use case, we recommend *NOT* storing your authorization token the way we did here for demonstration purposes, but instead choose a safer alternative *(i.e: environment variables)*.
+
+```typescript
+const token: string = '<your_token>'
+```
+
+To find out your token, [login](https://app.shippedbrain.com/login) to your [Shipped Brain](https://app.shippedbrain.com) account, access the [Dashboard](https://app.shippedbrain.com/dashboard/summary) and copy it from its respective area.
+
+## Note
+
+When cloning this repository, before running the app you must install the npm packages with:
+```bash
+npm run install
+```
+
+---
+
+## Angular info
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.14.
 
