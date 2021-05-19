@@ -1,0 +1,4 @@
+<div class="alert" [ngClass]="alertClass">
+    <span *ngIf="hasIcon" class="material-icons">{{ icon }}</span>
+    <div [innerHtml]="content"></div>
+</div>
